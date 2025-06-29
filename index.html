@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <p>Problem Solver</p>
+                <p>UI/UX Designer</p>
+                <p>Web Developer</p>
+                <h1>Hello! <br> I'm <span>Subham Pal</span> <br>From WB, India</h1>
+            </div>
+        </div>
+        <div class="rs">
+            <a href="images/CV_Subham.pdf" download class="btn btn4">Resume</a>
+            <a href="#contact" class="btn btn4">Hire Me</a>
+        </div>
+    </div>
+    <!-------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        A passionate and self-driven Computer Science student at Techno Main
+                        Salt Lake, currently in the 5th semester, with a strong foundation in
+                        software development and real-world problem-solving. Proficient in
+                        programming languages such as C, C++, Zava and Python, along with hands-on
+                        experience in web technologies including HTML, CSS, JavaScript, PHP, and
+                        MySQL. Continuously working on real-life projects to apply theoretical
+                        knowledge into practical solutions. Highly motivated to explore new
+                        technologies and committed to becoming a skilled software engineer
+                        through consistent learning and innovation.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Educations')">Educations</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Languages')">Languages</p>
+
+                    </div>
+                    <div class="tab-contents active-Skills" id="Skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, Tailwind </li>
+                            <li><span>Backend</span><br>PHP, Node Js, Java, Python, C, C++ </li>
+                            <li><span>Database</span><br>SQL, MongoDB </li>
+                            <li><span>Tools</span><br>Vercel, Git, GitHub, Adobe </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Educations">
+                        <ul>
+                            <li><span>BTech in CSE</span><br>Techno Main Salt Lake, Kolkata <br>(2023-2027) </li>
+                            <li><span>Higher Secondary</span><br>Kotalpur High School, Kotulpur, Bankura <br>(2020-2022)
+                            </li>
+                            <li><span>Secondary</span><br>Ramakrishna Mission Sarada Vidyapith, Joyrambati, Bankura
+                                <br>(2014-2020) </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Bireshwar Cold Storage Web</span><br>A responsive website for the company
+                                Bireshwar Cold Storage Privet ltd. </li>
+                            <li><span>Biocare LMS</span><br>A web based student management software for Biocare
+                                institute. </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Languages">
+                        <ul>
+                            <li><span>English</span><br>I am fluent in English, with strong communication skills. </li>
+                            <li><span>Bengali</span><br>My mother tongue is Bengali, giving me native proficiency. </li>
+                            <li><span>Hindi</span><br>I can also communicate effectively in Hindi. </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------projects---------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h2>Bireshwar Cold Storage Web</h2>
+                        <p>A responsive website for the company Bireshwar Cold Storage Privet ltd. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/work-2.jpeg" alt="">
+                    <div class="layer">
+                        <h2>Biocare LMS</h2>
+                        <p>A web based student management software for Biocare institute. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------contact---------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>palsubham2003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9735710466</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/CV_Subham.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <!--<form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>-->
+
+                    <form id="contact-form-2">
+                        <input type="text" name="user_name" placeholder="Your Name" required>
+                        <input type="email" name="user_email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <div id="form-message" class="message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>© 2025 MyPortfolio. All rights reserved.</h4>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Subham</p>
+
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-Skills");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-Skills");
+        }
+
+    </script>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("-Fmd0QlE7_D3DlyAY"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById('contact-form-2').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_iuoh5zv', 'template_ag07e8k', this)
+        .then(function() {
+          showMessage('Message sent successfully!', 'success');
+          document.getElementById('contact-form-2').reset();
+        }, function(error) {
+          showMessage('Failed to send message. Error: ' + JSON.stringify(error), 'error');
+        });
+    });
+
+    function showMessage(msg, type) {
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.style.display = 'block';
+      messageDiv.textContent = msg;
+      messageDiv.className = 'message ' + type;
+    }
+  </script>
+
+  <script>
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('nav');
+  if(window.scrollY > 50){
+    nav.classList.add('scrolled');
+  }else{
+    nav.classList.remove('scrolled');
+  }
+});
+</script>
+</body>
+
+</html>
