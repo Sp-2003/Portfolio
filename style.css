@@ -239,8 +239,9 @@ nav ul li a:hover::after {
 /*---------projects-----------*/
 
 #projects{
-    padding: 50px 0;
+    padding: 0 0;
 }
+
 .project-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -308,7 +309,7 @@ nav ul li a:hover::after {
 .btn{
     display: block;
     margin: 40px auto;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     width: fit-content;
     border: 1px solid #ff004f;
     padding: 14px 50px;
@@ -327,6 +328,9 @@ nav ul li a:hover::after {
 .contact-right{
     flex-basis: 60%;
     margin-top: 45px;
+}
+.contact-right h1{
+    display: none;
 }
 .contact-left p{
     margin-top: 30px;
@@ -395,6 +399,7 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    color: #ccc;
 }
 .copyright i{
     color: red;
@@ -436,6 +441,73 @@ form .btn2{
     background-color: #ff004f;
     transform: translateY(-5px);
 }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Explore টাইটেল আর ul center এ থাকবে */
+    text-align: center;
+}
+
+.explore h3 {
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.explore-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.explore-links li {
+    list-style: none;
+}
+
+.explore-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: #262626;
+}
+
+.explore-links li a:hover {
+    background-color: #ff004f;
+    color: #fff;
+}
+
+.address {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.address h3 {
+    padding: 10px 0;
+    text-align: right;
+}
+.port{
+    padding-left: 10px;
+    text-align: left;
+}
+.port h2{
+    margin-bottom: 15px;
+    color: #ff004f;
+}
+
 
 
 
@@ -505,7 +577,7 @@ form .btn2{
         margin-left: 0;
         text-align: center;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .btn.btn4{
         background: #ff004f;
@@ -572,6 +644,13 @@ form .btn2{
         flex-basis: 100%;
         margin-top: 20px;
     }
+    .contact-right h1{
+    display: flex;
+    font-size: 31px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    }
 
     .contact-left p {
         font-size: 14px;
@@ -594,11 +673,13 @@ form .btn2{
     .btn {
         padding: 10px 30px;
         font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .btn.btn2 {
         padding: 10px 20px;
         font-size: 14px;
+        margin-top: 10px;
         margin-bottom: 0;
     }
 
@@ -606,6 +687,51 @@ form .btn2{
         padding: 10px 20px;
         font-size: 14px;
     }
+
+    .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .port {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .port h2 {
+    text-align: center;
+  }
+  .port p{
+    font-size: 16px ;
+  }
+
+  .explore {
+    align-items: center;
+    text-align: center;
+  }
+
+  .explore h3 {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .explore-links {
+    justify-content: center;
+  }
+
+  .address {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .address h3 {
+    text-align: center;
+  }
+  .address p{
+    font-size: 15px;
+  }
 }
 
 
